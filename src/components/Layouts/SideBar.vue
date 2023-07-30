@@ -13,10 +13,7 @@
 
       <!-- <v-divider></v-divider> -->
       <!-- SideBarBtn -->
-    <div v-if="this.$router.currentRoute.path === '/'">
-      <SideBarBtn :btn_list="btn_list" />
-      </div>
-      <div v-else>
+    <div v-if="this.$router.currentRoute.path === '/brain'">
         <SideBarBtn :btn_list="plan_list" />
       </div>
       

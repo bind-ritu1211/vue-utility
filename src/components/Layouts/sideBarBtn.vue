@@ -2,7 +2,7 @@
   <div style="padding: 6px; line-height: 4">
     <v-btn
       style="width: 100%"
-      color="primary"
+      color="secondary-1 "
       height="40"
       v-for="text in btn_list"
       :key="text"
@@ -10,7 +10,7 @@
       <a
         :href="text.url"
         :target="text.target"
-        style="color: aliceblue; text-decoration: none; font-size: 12px"
+        style=" color: #000000;text-shadow: 1px 1px #e5e1e1; text-decoration: none; font-size: 12px"
       >
         {{ text.content }}
       </a>

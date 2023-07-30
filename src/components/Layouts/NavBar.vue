@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary">
+  <v-app-bar app color="primary-1">
     <v-toolbar-title>MyLogo</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn text v-for="nav_text in links" :key="nav_text">
@@ -24,7 +24,7 @@ export default {
           content: "HOME",
         },
         {
-          url: "/planing",
+          url: "/brain",
           content: "PLANNING",
         },
         {

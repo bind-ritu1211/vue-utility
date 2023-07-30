@@ -1,7 +1,11 @@
 /* @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" */
-.v-application .primary-1 {
-    background-color: #8364e2 !important;
-    border-color: #8364e2!important;
+.primary-1 {
+    background-color: #008080 !important;
+    border-color: #008080!important;
+}
+.secondary-1 {
+    background-color: #00cccc !important;
+    border-color: #00cccc!important;
 }
 .v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
     left: 0px !important;
