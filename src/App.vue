@@ -4,8 +4,12 @@
       <!-- Navbar -->
       <nav-bar />
       <!-- Sidebar -->
-      <side-bar />
-      <v-main style="padding: 70px 0px 0px 275px;">
+      <side-bar v-if="this.$router.currentRoute.path === '/'" style="width: 0px; display: none;"/>
+      <side-bar v-else/>
+      <v-main v-if="this.$router.currentRoute.path === '/'" style="padding: 55px 0px 0px 0px;">
+        <router-view />
+      </v-main>
+      <v-main v-else style="padding: 70px 0px 0px 275px;">
         <router-view />
       </v-main>
       <!-- Footer -->
