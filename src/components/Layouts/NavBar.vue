@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="primary-1">
-    <v-toolbar-title>MyLogo</v-toolbar-title>
+    <v-toolbar-title>ImagingGuru.com</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn text v-for="nav_text in links" :key="nav_text">
       <a
@@ -11,6 +11,7 @@
         {{ nav_text.content }}
       </a>
     </v-btn>
+    <v-btn text><a href="/Planingsite" target="_blank" style="color: rgb(249, 245, 245); text-decoration: none">Virtual Planning</a></v-btn>
   </v-app-bar>
 </template>
 
@@ -35,10 +36,7 @@ export default {
           url: "/anatomy",
           content: "ANATOMY",
         },
-        {
-          url: "/new",
-          content: "New",
-        },
+       
       ],
       icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     };
