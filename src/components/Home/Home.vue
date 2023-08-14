@@ -1,110 +1,20 @@
 <template>
   <div>
-    <div class="slider">
-      <div class="slide-track">
-        <div class="slide">
-          <img
-            src="@/assets/img/Console.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR D.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR FULL.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR G.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR P.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR-P.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="@/assets/img/MR.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
+    <div class="d-flex justify-center" style="margin: 3rem 0rem;">
+      <div v-for="(image, i) in imglist" :key="i" class="pa-2" outlined tile>
+        <img
+          :src="getImgUrl(image.img)"
+          class=""
+          style="width: 100%; height: auto"
+        />
       </div>
     </div>
-    <div style="margin: 2rem">
-      <div style="width: 95%; margin: auto; background: #efeaff; padding: 22px">
+
+    <div style="margin: 3rem auto; background: #ffff; width: 85%">
+      <div style="margin: autso; padding: 30px">
         <div class="p-10">
           <p class="text-h4 my-8 text-center">
-            "Exploring Radiology: Mastering the Art of Medical Visualization"
+            Exploring Radiology: Mastering the Art of Medical Visualization
           </p>
           <p class="my-6">
             <br /><b>Welcome to ImagingGuru! </b>
@@ -178,9 +88,23 @@
 
 <script>
 import CarausalAutoplay from "@/components/CarausalAutoplay.vue";
+import Imglist from "@/json/img.json";
 export default {
   name: "Home", // eslint-disable-line
   components: CarausalAutoplay,
+  data() {
+    return {
+      imglist: Imglist,
+    };
+  },
+  methods: {
+    getImgUrl(imageName) {
+      if (imageName !== "") {
+        const images = require.context("../../assets/img", false, /\.png$/);
+        return images("./" + imageName);
+      }
+    },
+  },
 };
 </script>
 <style>

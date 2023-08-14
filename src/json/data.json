@@ -1,17 +1,17 @@
 [{
-    "url": "/brain",
+    "url": "/plan-brain",
     "content": "BRAIN"
   },
   {
-    "url": "/mra-brain",
+    "url": "/plan-mra-brain",
     "content": "MRA BRAIN"
   },
   {
-    "url": "/paediatric-brain",
+    "url": "/plan-paediatric",
     "content": "PAEDIATRIC BRAIN"
   },
   {
-    "url": "/orbits",
+    "url": "/plan-orbits",
     "content": "ORBITS"
   },
   {
@@ -19,12 +19,16 @@
     "content": "PLAN IAMS"
   },
   {
-    "url": "/dwi-iam",
-    "content": "DWI IAM S(CHOLESTEATOMA)"
+    "url": "/plan-dwi",
+    "content": "DWI IAM S(CHOLESTEATOMA)",
+    "selected": false
+
   },
   {
-    "url": "/malignant",
-    "content": "MALIGNANT OTITIS EXTERNA"
+    "url": "/plan-malignant",
+    "content": "MALIGNANT OTITIS EXTERNA",
+    "selected": false
+
   },
   {
     "url": "/plan-pns",
@@ -39,7 +43,7 @@
     "content": "EPILEPSY PROTOCOL"
   },
   {
-    "url": "/plan-tmj",
+    "url": "/plan-tmjs",
     "content": "TMJS"
   },
   {
@@ -51,11 +55,11 @@
     "content": "FACE"
   },
   {
-    "url": "/soft-tissue-neck",
+    "url": "/plan-stn",
     "content": "SOFT TISSUE NECK"
   },
   {
-    "url": "/mr-sialography",
+    "url": "/plan-sialography",
     "content": "MR SIALOGRAPHY"
   },
   {
@@ -88,7 +92,9 @@
   },
   {
     "url": "/plan-cardiac-stress",
-    "content": "CARDIAC STRESS PERFUSION"
+    "content": "CARDIAC STRESS PERFUSION",
+    "selected": false
+
   },
   {
     "url": "/plan-mri-kidney",
@@ -116,18 +122,25 @@
   },
   {
     "url": "/plan-sec-stimulated-mrcp",
-    "content": "SECRETIN STIMULATED MRCP"
+    "content": "SECRETIN STIMULATED MRCP",
+    "selected": false
   },
   {
     "url": "/plan-smell-bowel",
-    "content": "SMALL BOWEL(ENTEROCLYSIS)"
+    "content": "SMALL BOWEL(ENTEROCLYSIS)",
+    "selected": false
+
   },
   {
     "url": "/plan-mra-&-mrv-abdomen",
-    "content": "MRA & MRV ABDOMEN"
+    "content": "MRA & MRV ABDOMEN",
+    "selected": false
+
   },{
     "url": "/plan-breast",
-    "content": "BREAST"
+    "content": "BREAST",
+    "selected": true
+
   },
   {
     "url": "/plan-breast-implants",
@@ -139,7 +152,9 @@
   },
   {
     "url": "/plan-ant-abdominal-wall",
-    "content": "ANTERIOR ABDOMINAL WALL"
+    "content": "ANTERIOR ABDOMINAL WALL",
+    "selected": false
+
   },
   {
     "url": "/plan-p-urinary-bladder",
@@ -161,7 +176,7 @@
     "url": "/plan-mri-testis",
     "content": "MRI TESTIS"
   },{
-    "url": "/plan-ayne-pelvis",
+    "url": "/plan-gyne-pelvis",
     "content": "GYNE PELVIS"
   },
   {
@@ -174,7 +189,9 @@
   },
   {
     "url": "/plan-d-proctogram",
-    "content": "DEFECATING PROCTOGRAM"
+    "content": "DEFECATING PROCTOGRAM",
+    "selected": false
+
   },
   {
     "url": "/plan-hips",
@@ -188,7 +205,7 @@
     "url": "/plan-psoas",
     "content": "PSOAS"
   },{
-    "url": "/plan-l-spine",
+    "url": "/plan-lumber-spine",
     "content": "LUMBAR SPINE"
   },
   {
@@ -196,7 +213,7 @@
     "content": "SI JOINTS"
   },
   {
-    "url": "/plan-l-plexus",
+    "url": "/plan-lbsrl-plexus",
     "content": "LUMBOSACRAL PLEXUS"
   },
   {
@@ -270,11 +287,15 @@
     "content": "MRA HAND"
   },{
     "url": "/plan-spinal-cord",
-    "content": "SPINAL CORD PROTOCOL"
+    "content": "SPINAL CORD PROTOCOL",
+    "selected": false
+
   },
   {
     "url": "/plan-multiple-slrsis-protocol",
-    "content": "MULTIPLE SCLEROSIS PROTOCOL"
+    "content": "MULTIPLE SCLEROSIS PROTOCOL",
+    "selected": false
+
   },
   {
     "url": "/plan-mra-body",

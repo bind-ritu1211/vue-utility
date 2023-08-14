@@ -1,10 +1,8 @@
 <template>
-  <v-footer dark padless>
-      <v-card class="flex" flat tile>
-        <v-card-text class="py-2 white--text text-center">
-          {{ new Date().getFullYear() }} — <strong></strong>
-        </v-card-text>
-      </v-card>
+  <v-footer style="background: #008080;" class="align-center justify-center">
+      <p>
+        {{ new Date().getFullYear() }}
+      </p>
     </v-footer>
 </template>
 

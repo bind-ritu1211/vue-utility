@@ -11,7 +11,7 @@ export default {
   data(){
     return{
       plans_text:[{
-        title:  "Brain",
+        title:  "MRA Brain",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       }]
     }

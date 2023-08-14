@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="primary-1">
-    <v-toolbar-title>ImagingGuru.com</v-toolbar-title>
+    <v-toolbar-title><a href="/" style="color: #fff; text-decoration: none;text-shadow: 1px 1px #030303;font-size: 25px;">ImagingGuru.com</a></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn text v-for="nav_text in links" :key="nav_text">
       <a
@@ -25,7 +25,7 @@ export default {
           content: "HOME",
         },
         {
-          url: "/brain",
+          url: "/plan-brain",
           content: "PLANNING",
         },
         {
